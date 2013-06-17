@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Generic</title>
+ </head>
+ <body>
+  <h1>My Book List</h1>
+
+ 
+<script>
+
+var books = [ {title: "Book 1", author: "Me", alreadyRead: true}, {title: "Book 2", author: "You", alreadyRead: false}, {title: "Book 3", author: "Myself", alreadyRead: true} ];
+for (x = 0; x < books.length; x++) {
+	
+var p = document.createElement('p');
+p.innerHTML = books[x].title + " by " + books[x].author;
+document.body.appendChild(p);
+}
+
+
+
+</script>
+
+ </body>
+</html>

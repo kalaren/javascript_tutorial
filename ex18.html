@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>About Me</title>
+</head>
+<body>
+  <h1>About Me</h1>
+  
+  <ul>
+    <li>Name: <span id="name"></span>
+    <li>Age:  <span id="age"></span>
+    <li>Hometown: <span id="hometown"></span>
+   </ul>
+
+   <script>
+
+var main = document.body;
+main.style.fontFamily = "Arial, sans-serif";
+
+var first = document.getElementById('name');
+var age = document.getElementById('age');
+var home = document.getElementById('hometown');
+
+first.innerHTML = 'Eric';
+age.innerHTML = '26';
+home.innerHTML = 'Oakville';
+
+var list = document.getElementsByTagName('li');
+
+for (x = 0; x<list.length; x++) {
+	list[x].className = 'listitem';
+	list[x].style.color = 'red';
+}
+
+var img = document.createElement('img');
+img.src = 'http://azerireport.com/Cartoons/Bear(1).jpg'
+document.body.appendChild(img);
+
+   </script>
+  
+ </body>
+</html>
+  
